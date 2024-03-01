@@ -9,21 +9,18 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#ffffff',
+      'white': '#f9efdb',
       'black': '#000000',
-      'gray': {
-        100: '#ebd9b4',
-        200:"#e0dacc",
-        800: '#545048',
+      'beige': {
+        100: '#e0e0e0',
+        200: '#9e9e9e',
       },
       'green': {
-        100: '#9dbc98',
-        200: '#7EAE7F',
-        300: '#7AC88A',
+        100: '#c4ffc9',
       },
-      'button':{
-        100: '#D97706',
-        200: '#DC2626',
+      'blue':{
+        100: '#00fff2',
+        200: '#5ecde0',
       },
     },
     extend: {},
