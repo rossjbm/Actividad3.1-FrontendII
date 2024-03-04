@@ -21,7 +21,6 @@ export default {
         100: '#c4ffc9',
       },
       'blue':{
-        100: '#00fff2',
         200: '#5ecde0',
         300: '#6BCFCD',
       },

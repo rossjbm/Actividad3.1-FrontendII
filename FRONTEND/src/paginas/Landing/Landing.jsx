@@ -31,9 +31,9 @@ export function Landing({setHeaderMostrar, setBotonRMostrar}) {
                     <section className='bg-gray-300 flex flex-col items-center justify-center text-center gap-16 py-16'>
                         <h3 className='text-white font-bold text-xl font-textos text-justify w-4/5'>Lo Mejor para Disfrutar de la Isla de Margarita</h3>
                         <p className='text-white font-textos text-lg text-justify w-4/5'>En HazbinHotel, creemos que cada momento de tus vacaciones debe ser especial. Desde el momento en que pones un pie en nuestra propiedad, te sumergirás en un mundo de elegancia, comodidad y belleza natural.</p>
-                        <p className='text-white font-textos text-lg text-justify w-4/5'>Nos ubicamos en: </p>
+                        <p className='text-white font-textos text-lg text-justify w-4/5'>Nos ubicamos en: C. Antonio Díaz, Pampatar 6316, Nueva Esparta, Venezuela</p>
                         <Link to={`inicio`} className='w-4/5 '>
-                            <button className='w-full h-16 border-white border-2 text-white text-xl font-textos md:w-1/2 hover:bg-gray-300'>Ingresa Ahora</button>
+                            <button className='w-full h-16 border-white border-2 no-underline text-white text-xl font-textos md:w-1/2 hover:bg-black'>Ingresa Ahora</button>
                         </Link>
                     </section>
                 </div>
@@ -85,9 +85,9 @@ export function Landing({setHeaderMostrar, setBotonRMostrar}) {
         <div className='bg-landingFondo1 bg-cover bg-fixed shadow-2xl w-full'>
             <section className='bg-gray-300 flex flex-col items-center justify-center gap-16 py-20'>
                 <h3 className='text-white font-bold text-2xl font-textos text-center w-4/5 sm:text-3xl'>¿Qué estás esperando?</h3>
-                <a href={`inicio`} className='w-4/5 flex flex-col items-center'>
-                    <button className='w-full h-16 border-white border-2 no-underline text-white text-xl font-textos md:w-1/2 hover:bg-gray-300 hover:border-4'>Ingresa Ahora</button>
-                </a>
+                <Link to={`inicio`} className='w-4/5 flex flex-col items-center no-underline hover:text-black'>
+                    <button className='w-full h-16 border-white border-2 no-underline text-white text-xl font-textos md:w-1/2 hover:bg-black'>Ingresa Ahora</button>
+                </Link>
             </section>
         </div>
     </section>)

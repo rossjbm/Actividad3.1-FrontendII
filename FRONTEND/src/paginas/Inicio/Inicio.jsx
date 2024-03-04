@@ -1,3 +1,4 @@
+
 import { ServicioCarrusel } from "../../componentes/Inicio/ServicioCarrusel";
 
 
@@ -13,7 +14,7 @@ export function Inicio() {
             <div className="font-textos text-lg flex flex-col p-10 gap-6 text-justify md:px-56 md:flex-row md:gap-14">
                 <p className="md:bg-gray-300 md:p-5 md:text-white">Ubicado en la paradisíaca Isla de Margarita, el HazbinHotel es un refugio de elegancia, tranquilidad, seguridad y diversión.</p>
 
-                <p className="md:bg-gray-300 md:p-5 md:text-white">HazbinHotel es más que un lugar para quedarse, es una experiencia. Reserva tu estancia hoy y descubre el paraíso en la Isla de Margarita.</p>
+                <p className="md:bg-gray-300 md:p-5 md:text-white">Este es más que un lugar para quedarse, es una experiencia. Reserva tu estancia hoy y descubre el paraíso en la Isla de Margarita.</p>
             </div>
 
             <div className="static h-36 bg-bgFondo1 bg-cover bg-fixed w-full ">

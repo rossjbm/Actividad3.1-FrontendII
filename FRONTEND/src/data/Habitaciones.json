@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "Habitación Individual 1",
+        "precio": 100,
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui"
+    },
+    {
+        "id":2,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "Habitación Individual 2",
+        "precio": 120,
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui"
+    },
+    {
+        "id":3,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "Habitación Individual 3",
+        "precio": 90,
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui"
+    }
+]

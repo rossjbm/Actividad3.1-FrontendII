@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "30% de Descuento en Todo Marzo",
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "limite": "30-03-24"
+    },
+    {
+        "id":2,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "Promoción 2x1 de Semana Santa",
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "limite": "24-02-24"
+    },
+    {
+        "id":3,
+        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "nombre": "10% de Descuento en Servicios de Comida",
+        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "limite": "10-05-24"
+    }
+]
