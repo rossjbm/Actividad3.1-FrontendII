@@ -1,0 +1,71 @@
+/* Estilos para el contenedor principal */
+.habitaciones {
+    position: relative;
+    text-align: center; 
+    border: 2px solid #ccc; 
+    border-radius: 12px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos para los contenedores de habitaciones */
+.habitacion-container, .habitacion-ejemplo {
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    position: relative; 
+}
+
+/* Estilos para las habitaciones */
+.habitacion, .habitacion-ejemplo {
+    display: none;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la habitación activa y el ejemplo */
+.habitacion.active, .habitacion-ejemplo {
+    display: block;
+}
+
+/* Estilos para las imágenes de las habitaciones */
+.habitacion img, .habitacion-ejemplo img {
+    width: 100%; 
+    height: auto;
+    max-width: 200px; 
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px; 
+}
+
+/* Estilos para los detalles de las habitaciones */
+.detalle, .habitacion-ejemplo .detalle {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para las flechas de navegación */
+.prev, .next {
+    position: absolute;
+    bottom: -70px; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 15px; 
+    outline: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.prev {
+    left: 50px; 
+}
+
+.next {
+    right: 50px; 
+}
