@@ -2,7 +2,7 @@
 import { Inicio } from "./paginas/Inicio/Inicio";
 import { Landing } from "./paginas/Landing/Landing";
 import { Encabezado } from "./componentes/Encabezado/Encabezado";
-// import { Ofertas } from "./paginas/Ofertas/Ofertas";
+import Ofertas from "./paginas/Ofertas/Ofertas";
 // import { Reservar } from "./paginas/Reservar/Reservar";
 // import { Acceder } from "./paginas/IniciarSesion/Acceder";
 import { Error } from "./paginas/NotFound/Error";
@@ -27,7 +27,7 @@ export function App() {
                 <Route path="/" element={<Landing setHeaderMostrar={setHeaderMostrar} setBotonRMostrar={setBotonRMostrar}/>} />
                 <Route path="/inicio" element={<Inicio/>} />
                 <Route path="/acceder" element={<h1>ESTAMOS EN INICIAR SESION</h1>} />
-                <Route path="/ofertas" element={<h1>ESTAMOS EN OFERTAS</h1>} />
+                <Route path="/ofertas" element={<Ofertas/>} />
                 <Route path="/habitaciones" element={<Habitaciones/>} />
                 <Route path="/blog" element={<h1>ESTAMOS EN BLOG</h1>} />
                 <Route path="/pagos" element={<h1>ESTAMOS EN MODOS DE PAGOS</h1>} />
