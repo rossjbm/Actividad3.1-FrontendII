@@ -8,6 +8,7 @@ import { Encabezado } from "./componentes/Encabezado/Encabezado";
 import { Error } from "./paginas/NotFound/Error";
 import { BotonReservar } from "./componentes/botones/BotonReservar";
 import { Pie } from "./componentes/PiePagina/Pie";
+import Habitaciones from "./paginas/Habitaciones/Habitaciones";
 
 
 // REACT ROUTER
@@ -27,7 +28,7 @@ export function App() {
                 <Route path="/inicio" element={<Inicio/>} />
                 <Route path="/acceder" element={<h1>ESTAMOS EN INICIAR SESION</h1>} />
                 <Route path="/ofertas" element={<h1>ESTAMOS EN OFERTAS</h1>} />
-                <Route path="/habitaciones" element={<h1>ESTAMOS EN HABITACIONES</h1>} />
+                <Route path="/habitaciones" element={<Habitaciones/>} />
                 <Route path="/blog" element={<h1>ESTAMOS EN BLOG</h1>} />
                 <Route path="/pagos" element={<h1>ESTAMOS EN MODOS DE PAGOS</h1>} />
                 <Route path="/contacto" element={<h1>ESTAMOS EN CONTACTO</h1>} />
