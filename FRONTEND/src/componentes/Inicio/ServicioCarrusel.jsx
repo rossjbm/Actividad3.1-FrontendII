@@ -1,0 +1,112 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+import Servicio1 from '../../assets/Servicio1.jpeg'
+import Servicio2 from '../../assets/Servicio2.jpg'
+import Servicio3 from '../../assets/Servicio3.jpg'
+import Servicio4 from '../../assets/Servicio4.jpg'
+import Servicio5 from '../../assets/Servicio5.jpg'
+import Servicio6 from '../../assets/Servicio6.jpg'
+import Servicio7 from '../../assets/Servicio7.jpeg'
+
+export function ServicioCarrusel() {
+  return (<>
+    <Carousel data-bs-theme="dark">
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio1}
+          alt="Habitaciones"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Habitaciones de Lujo</h5>
+            <p>Las habitaciones del HazbinHotel están diseñadas para proporcionar el máximo confort y lujo. Cada habitación está equipada con un baño privado con ducha de lluvia, una pantalla plana y un minibar bien surtido.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio2}
+          alt="Restaurante Gourmet"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Restaurante Gourmet de Lujo</h5>
+            <p>El hotel cuenta con un restaurante de alta cocina que sirve una variedad de platos locales e internacionales. Los chefs utilizan ingredientes frescos y de alta calidad para crear tus platos deliciosos.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio3}
+          alt="Spa de Relajación"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Spa de Relajación</h5>
+            <p>El spa del hotel ofrece una variedad de tratamientos, incluyendo masajes, tratamientos faciales, envolturas corporales y más. Es el lugar perfecto para relajarse y rejuvenecer después de un día de exploración.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio4}
+          alt="Gimnasio"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Gimnasio</h5>
+            <p>El hotel cuenta con un gimnasio bien equipado para aquellos que desean mantener su rutina de ejercicios durante su estancia. Tiene una variedad de equipos de cardio y de fuerza, así como clases de fitness.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio5}
+          alt="Piscina al Aire Libre"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Piscina al Aire Libre</h5>
+            <p>El hotel cuenta con una hermosa piscina al aire libre donde los huéspedes pueden relajarse y disfrutar del sol. La piscina está rodeada de tumbonas y sombrillas para la comodidad de los huéspedes.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio6}
+          alt="Seguridad las 24 horas"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Seguridad las 24 horas</h5>
+            <p>Para garantizar la seguridad y la tranquilidad de los huéspedes, el hotel cuenta con seguridad las 24 horas. El personal de seguridad está altamente capacitado y siempre está disponible para ayudar a los huéspedes.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-full h-[500px] object-cover"
+          src={Servicio7}
+          alt="Actividades Recreativas"
+        />
+        <Carousel.Caption className='flex md:justify-start md:items-center h-full justify-end items-end'>
+          <div className='bg-white md:flex flex-col md:w-1/2 md:h-56 justify-center p-4'>
+            <h5>Actividades Recreativas</h5>
+            <p>El hotel ofrece una variedad de actividades recreativas para los huéspedes, incluyendo deportes acuáticos, senderismo, ciclismo y más. Están diseñadas para proporcionar diversión y entretenimiento a los huéspedes durante su estancia.</p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+    </Carousel>  </>);
+}

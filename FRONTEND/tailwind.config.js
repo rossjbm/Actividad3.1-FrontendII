@@ -11,9 +11,11 @@ export default {
       current: 'currentColor',
       'white': '#f9efdb',
       'black': '#000000',
-      'beige': {
+      'gray': {
         100: '#e0e0e0',
         200: '#9e9e9e',
+        300: '#000000cc',
+        400: '#000000b3',
       },
       'green': {
         100: '#c4ffc9',
@@ -21,9 +23,18 @@ export default {
       'blue':{
         100: '#00fff2',
         200: '#5ecde0',
+        300: '#6BCFCD',
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'parallaxFondo1': "url('/src/assets/ImgCompleta.png')",
+        'parallaxFondo2': "url('/src/assets/ImgRecorte.png')",
+        'landingFondo1': "url('/src/assets/fondoHotel1.jpg')",
+        'bgFondo1': "url('/src/assets/fondoHotel2.jpg')",
+        'bgFondo2': "url('/src/assets/fondoHotel3.jpg')",
+      },
+    },
   },
   plugins: [],
 }
