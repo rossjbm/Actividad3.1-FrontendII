@@ -1,125 +1,32 @@
 import React, { useState } from 'react';
-import './Ofertas.css'; // Importa estilos CSS
+import ofertasData from "../../data/Ofertas.json";
 
-const Ofertas = () => {
-  // Datos de las habitaciones individuales
-  const habitacionesIndividuales = [
-    {
-      imagen: 'url_imagen_1',
-      nombre: 'Habitación Individual 1',
-      precio: 100,
-      capacidad: 1,
-      descuento: 10
-    },
-    {
-      imagen: 'url_imagen_2',
-      nombre: 'Habitación Individual 2',
-      precio: 120,
-      capacidad: 1,
-      descuento: 15
-    },
-    {
-      imagen: 'url_imagen_3',
-      nombre: 'Habitación Individual 3',
-      precio: 90,
-      capacidad: 1,
-      descuento: 5
-    }
-  ];
-
-  // Datos de las habitaciones matrimoniales
-  const habitacionesMatrimoniales = [
-    {
-      imagen: 'url_imagen_4',
-      nombre: 'Habitación Matrimonial 1',
-      precio: 200,
-      capacidad: 2,
-      descuento: 20
-    },
-    {
-      imagen: 'url_imagen_5',
-      nombre: 'Habitación Matrimonial 2',
-      precio: 180,
-      capacidad: 2,
-      descuento: 15
-    },
-    {
-      imagen: 'url_imagen_6',
-      nombre: 'Habitación Matrimonial 3',
-      precio: 220,
-      capacidad: 2,
-      descuento: 25
-    }
-  ];
-
-  const [slideIndexIndividuales, setSlideIndexIndividuales] = useState(0);
-  const [slideIndexMatrimoniales, setSlideIndexMatrimoniales] = useState(0);
-
-  const nextSlideIndividuales = () => {
-    setSlideIndexIndividuales((prevIndex) =>
-      prevIndex === habitacionesIndividuales.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlideIndividuales = () => {
-    setSlideIndexIndividuales((prevIndex) =>
-      prevIndex === 0 ? habitacionesIndividuales.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextSlideMatrimoniales = () => {
-    setSlideIndexMatrimoniales((prevIndex) =>
-      prevIndex === habitacionesMatrimoniales.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlideMatrimoniales = () => {
-    setSlideIndexMatrimoniales((prevIndex) =>
-      prevIndex === 0 ? habitacionesMatrimoniales.length - 1 : prevIndex - 1
-    );
-  };
+export function Ofertas() {
+  const [ofertas, setOfertas] = useState(ofertasData);
 
   return (
-    <div className="ofertas-container">
-      <div className="individuales-container">
-        <h2>Habitaciones Individuales</h2>
-        <div className="habitacion-container-individuales">
-          <button className="prev-individuales" onClick={prevSlideIndividuales}>&#10094;</button>
-          {habitacionesIndividuales.map((habitacion, index) => (
-            <div key={index} className={`habitacion-individuales ${index === slideIndexIndividuales ? 'active' : ''}`}>
-              <img src={habitacion.imagen} alt={habitacion.nombre} />
-              <div className="detalle-individuales">
-                <h3>{habitacion.nombre}</h3>
-                <p>Precio: ${habitacion.precio}</p>
-                <p>Capacidad: {habitacion.capacidad} persona(s)</p>
-                <p>Descuento: {habitacion.descuento}%</p>
-              </div>
-            </div>
-          ))}
-          <button className="next-individuales" onClick={nextSlideIndividuales}>&#10095;</button>
+    <>
+      <div className="static h-56 bg-bgFondo1 bg-cover bg-fixed w-full">
+        <div className="flex justify-center items-center w-full h-56 bg-gray-400 p-5">
+          <h2 className="text-white text-3xl font-textos text-center">Ofertas</h2>
         </div>
       </div>
-
-      <div className="matrimoniales-container">
-        <h2>Habitaciones Matrimoniales</h2>
-        <div className="habitacion-container-matrimoniales">
-          <button className="prev-matrimoniales" onClick={prevSlideMatrimoniales}>&#10094;</button>
-          {habitacionesMatrimoniales.map((habitacion, index) => (
-            <div key={index} className={`habitacion-matrimoniales ${index === slideIndexMatrimoniales ? 'active' : ''}`}>
-              <img src={habitacion.imagen} alt={habitacion.nombre} />
-              <div className="detalle-matrimoniales">
-                <h3>{habitacion.nombre}</h3>
-                <p>Precio: ${habitacion.precio}</p>
-                <p>Capacidad: {habitacion.capacidad} persona(s)</p>
-                <p>Descuento: {habitacion.descuento}%</p>
+      <div className='grid grid-cols-1 gap-14 py-20 xl:grid-cols-2 xl:px-20'>
+        {
+          ofertas.map(oferta => (
+            <section key={oferta.id} className='bg-gray-300 md:grid md:grid-cols-2'>
+              <div>
+                <img src={oferta.imagen} alt="Oferta" className='h-72 xl:h-full object-cover w-full'/>
               </div>
-            </div>
-          ))}
-          <button className="next-matrimoniales" onClick={nextSlideMatrimoniales}>&#10095;</button>
-        </div>
+              <div className='flex flex-col gap-4 p-4 justify-around items-center text-white font-textos'>
+                <h3 className='text-2xl text-center'>{oferta.nombre}</h3>
+                <p className='text-xl bg-blue-200 p-2 text-black font-bold'>{oferta.limite}</p>
+                <p className='text-center'>{oferta.descripcion}</p>
+              </div>
+            </section>
+          ))
+        }
       </div>
-    </div>
+    </>
   );
-};
-
-export default Ofertas;
+}
