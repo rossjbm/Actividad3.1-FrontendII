@@ -1,94 +1,30 @@
 import React, { useState } from 'react';
-import './Habitaciones.css'; // Importa estilos CSS
+import data from "../../data/Habitaciones.json"
 
-const Habitaciones = () => {
-  // Habitación de ejemplo
-  const habitacionEjemplo = {
-    imagen: 'https://images.hola.com/imagenes/decoracion/20230425230358/dormitorios-inspirados-en-habitaciones-hoteles-am/1-237-28/habitaciones-hotel-5a-a.jpg',
-    nombre: 'Habitación de Ejemplo',
-    precio: 200,
-    capacidad: 3
-  };
 
-  const habitaciones = [
-    {
-      imagen: 'https://images.hola.com/imagenes/decoracion/20230425230358/dormitorios-inspirados-en-habitaciones-hoteles-am/1-237-28/habitaciones-hotel-5a-a.jpg',
-      nombre: 'Habitación Deluxe',
-      precio: 150,
-      capacidad: 2
-    },
-    {
-      imagen: 'url_imagen_2',
-      nombre: 'Suite Presidencial',
-      precio: 300,
-      capacidad: 4
-    },
-    {
-      imagen: 'url_imagen_3',
-      nombre: 'Habitación Estándar',
-      precio: 100,
-      capacidad: 2
-    },
-    {
-      imagen: 'url_imagen_4',
-      nombre: 'Habitación Familiar',
-      precio: 200,
-      capacidad: 6
-    },
-    {
-      imagen: 'url_imagen_5',
-      nombre: 'Suite Ejecutiva',
-      precio: 250,
-      capacidad: 3
-    }
-  ];
-
-  const [currentRoomIndex, setCurrentRoomIndex] = useState(0);
-
-  const previousRoom = () => {
-    setCurrentRoomIndex((prevIndex) =>
-      prevIndex === 0 ? habitaciones.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextRoom = () => {
-    setCurrentRoomIndex((prevIndex) =>
-      prevIndex === habitaciones.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  return (
-    <div className="habitaciones">
-      <h2>Habitaciones</h2>
-      {/* Habitación de ejemplo con estilos CSS */}
-      <div className="habitacion-ejemplo">
-        <img src={habitacionEjemplo.imagen} alt={habitacionEjemplo.nombre} />
-        <div className="detalle">
-          <h3>{habitacionEjemplo.nombre}</h3>
-          <p>Precio: ${habitacionEjemplo.precio} por noche</p>
-          <p>Capacidad: {habitacionEjemplo.capacidad} personas</p>
+export function Habitaciones() {
+  const [habitaciones, setHabitaciones] = useState(data)
+  return(<>
+    <div className="static h-56 bg-bgFondo1 bg-cover bg-fixed w-full">
+        <div className="flex justify-center items-center w-full h-56 bg-gray-400 p-5">
+            <h2 className="text-white text-3xl font-textos text-center">Habitaciones</h2>
         </div>
-      </div>
-      {/* Carrusel de habitaciones */}
-      <div className="habitacion-container">
-        {habitaciones.map((habitacion, index) => (
-          <div
-            key={index}
-            className={`habitacion ${index === currentRoomIndex ? 'active' : ''}`}
-          >
-            <img src={habitacion.imagen} alt={habitacion.nombre} />
-            <div className="detalle">
-              <h3>{habitacion.nombre}</h3>
-              <p>Precio: ${habitacion.precio} por noche</p>
-              <p>Capacidad: {habitacion.capacidad} personas</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <button className="prev" onClick={previousRoom}>&#10094;</button>
-      <button className="next" onClick={nextRoom}>&#10095;</button>
     </div>
-  );
-};
-
-export default Habitaciones;
+    <div className='grid grid-cols-1 gap-14 py-20 xl:grid-cols-2 xl:px-20'>
+      {
+        habitaciones.map(habitacion => (
+          <section key={habitacion.id} className='bg-gray-300 md:grid md:grid-cols-2'>
+            <div>
+              <img src={habitacion.imagen} alt="Habitación" className='h-72 xl:h-full object-cover w-full'/>
+            </div>
+            <div className='flex flex-col gap-4 p-4 justify-around items-center text-white font-textos'>
+              <h3 className='text-2xl text-center'>{habitacion.nombre}</h3>
+              <p className='text-xl bg-blue-200 p-2 text-black font-bold'>{habitacion.precio}$</p>
+              <p className='text-center'>{habitacion.descripcion}</p>
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </>)
+}
