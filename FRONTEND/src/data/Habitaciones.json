@@ -1,23 +1,30 @@
 [
     {
         "id":1,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
-        "nombre": "Habitación Individual ",
-        "precio": 50,
-        "descripcion": "Habitacion para una persona, con baño incluido"
+        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2022/04/hoteles-cancun-vista-mar-habitacion.jpg?fit=1075%2C695&ssl=1",
+        "nombre": "Habitación Al Viento",
+        "precio": 100,
+        "descripcion": "Cuenta con una ventana espectacular para admirar las vistas del lugar, con espacio abierto y todo lo nesesario para estar cómodo."
     },
     {
         "id":2,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
-        "nombre": "Habitación Matrimonial",
+        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2022/01/hotel-cancun-frente-mar-suite.jpg?fit=980%2C694&ssl=1",
+        "nombre": "Habitación Cabaña",
         "precio": 120,
-        "descripcion": "Habitacion para dos persona, con baño incluido"
+        "descripcion": "Sus detalles en madera es de resaltar, con un espacio amplio e iluminado, y un área de trabajo para quienes lo requieran."
     },
     {
         "id":3,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
-        "nombre": "Habitación Doble",
+        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2021/10/hoteles-cancun-frente-mar-habitacion-terraza.jpg?fit=1075%2C695&ssl=1",
+        "nombre": "Habitación Dulce Toronja",
         "precio": 90,
-        "descripcion": "Habitacion para 4 personas, con baño incluido y dos camas matrimoniales"
+        "descripcion": "Espaciosa en paredes de tono tan anaranjado como una toronja. Cuenta con espacios de descanso 100% cómodos."
+    },
+    {
+        "id":4,
+        "imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/347005554.jpg?k=d9bc9271949a7330c411ebefcd96a18c94e87029791e8e0110063aafae90ca93&o=&hp=1",
+        "nombre": "Habitación Together",
+        "precio": 80,
+        "descripcion": "Un mismo espacio para compartir con quien más quieres, tienes acceso a dispositivos modernos que harás de tu experiencia la mejor."
     }
 ]

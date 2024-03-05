@@ -1,23 +1,23 @@
 [
     {
         "id":1,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "imagen": "https://escuelaturismopirineos.com/wp-content/uploads/servicios-hotel.jpg",
         "nombre": "30% de Descuento en Todo Marzo",
-        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "descripcion": "Antes de que llegue Semana Santa necesitas llenarte de energía en las hermosas playas de Nueva Esparta y en un lugar que te brinde la mejor atención, por eso disfruta de este 30% de descuento solo para ti",
         "limite": "30-03-24"
     },
     {
         "id":2,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "imagen": "https://cdn.getyourguide.com/img/magazine/5f0d984852008deb4cebb8d7c9319801.jpg/original.jpg",
         "nombre": "Promoción 2x1 de Semana Santa",
-        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "descripcion": "Llegó la Semana Santa y no hay nada mejor que celebrarlo en HazbinHotel con las mejores recetas de pescados y mariscos, ven y disfruta de una estancia tranquila y llena de actividades que disfrutarás",
         "limite": "24-02-24"
     },
     {
         "id":3,
-        "imagen": "https://digital.ihg.com/is/image/ihg/intercontinental-hotel-view",
+        "imagen": "https://www.embassy.es/wp-content/uploads/2023/06/menu-gourmet.jpg",
         "nombre": "10% de Descuento en Servicios de Comida",
-        "descripcion": "asxnaknxaksnxasnxabxbaxbasui",
+        "descripcion": "Tenemos un especial Gourmet en nuestro Restaurante Estrella que te ofrecemos con un jugoso descuento del 10% para que disfrutes al máximo de nuestras delicias",
         "limite": "10-05-24"
     }
 ]
