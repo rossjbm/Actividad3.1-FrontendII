@@ -2,13 +2,13 @@
 import { Inicio } from "./paginas/Inicio/Inicio";
 import { Landing } from "./paginas/Landing/Landing";
 import { Encabezado } from "./componentes/Encabezado/Encabezado";
-import Ofertas from "./paginas/Ofertas/Ofertas";
+import { Ofertas } from "./paginas/Ofertas/Ofertas";
 // import { Reservar } from "./paginas/Reservar/Reservar";
 // import { Acceder } from "./paginas/IniciarSesion/Acceder";
 import { Error } from "./paginas/NotFound/Error";
 import { BotonReservar } from "./componentes/botones/BotonReservar";
 import { Pie } from "./componentes/PiePagina/Pie";
-import Habitaciones from "./paginas/Habitaciones/Habitaciones";
+import { Habitaciones } from "./paginas/Habitaciones/Habitaciones";
 
 
 // REACT ROUTER
