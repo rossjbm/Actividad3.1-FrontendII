@@ -1,30 +1,44 @@
 [
     {
         "id":1,
-        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2022/04/hoteles-cancun-vista-mar-habitacion.jpg?fit=1075%2C695&ssl=1",
-        "nombre": "Habitación Al Viento",
-        "precio": 100,
-        "descripcion": "Cuenta con una ventana espectacular para admirar las vistas del lugar, con espacio abierto y todo lo nesesario para estar cómodo."
+        "imagen": "https://images.mirai.com/INFOROOMS/10030559/NzLXA8mGnfQhLUeZXSKJ/NzLXA8mGnfQhLUeZXSKJ_large.jpg",
+        "nombre": "Habitación Individual ",
+        "precio": 50,
+        "descripcion": "Habitacion para una persona, con baño incluido"
     },
     {
         "id":2,
-        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2022/01/hotel-cancun-frente-mar-suite.jpg?fit=980%2C694&ssl=1",
-        "nombre": "Habitación Cabaña",
+        "imagen": "https://media-cdn.tripadvisor.com/media/photo-s/0d/20/fc/73/habitacion-matrimonial.jpg",
+        "nombre": "Habitación Matrimonial",
         "precio": 120,
-        "descripcion": "Sus detalles en madera es de resaltar, con un espacio amplio e iluminado, y un área de trabajo para quienes lo requieran."
+        "descripcion": "Habitacion para dos persona, con baño incluido"
     },
     {
         "id":3,
-        "imagen": "https://i0.wp.com/presidenteiccancun.com/wp-content/uploads/2021/10/hoteles-cancun-frente-mar-habitacion-terraza.jpg?fit=1075%2C695&ssl=1",
-        "nombre": "Habitación Dulce Toronja",
-        "precio": 90,
-        "descripcion": "Espaciosa en paredes de tono tan anaranjado como una toronja. Cuenta con espacios de descanso 100% cómodos."
+        "imagen": "https://www.santuariohotel.com/wp-content/uploads/2019/01/GaleriaHabitacion2.jpg",
+        "nombre": "Habitación Doble",
+        "precio": 250,
+        "descripcion": "Habitacion para 4 personas, con baño incluido y dos camas matrimoniales"
     },
     {
         "id":4,
-        "imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/347005554.jpg?k=d9bc9271949a7330c411ebefcd96a18c94e87029791e8e0110063aafae90ca93&o=&hp=1",
-        "nombre": "Habitación Together",
-        "precio": 80,
-        "descripcion": "Un mismo espacio para compartir con quien más quieres, tienes acceso a dispositivos modernos que harás de tu experiencia la mejor."
+        "imagen": "https://www.isabelhotelunico.com/images/k-01.jpg",
+        "nombre": "Habitación KING",
+        "precio": 350,
+        "descripcion": "Habitacion para 2 personas, con baño incluido y con una gran comodidad"
+    },
+    {
+        "id":5,
+        "imagen": "https://www.santuariohotel.com/wp-content/uploads/2019/01/GaleriaHabitacion3.jpg",
+        "nombre": "Habitación Triple",
+        "precio": 300,
+        "descripcion": "Habitacion para 4 personas, con baño incluido y una cama matrimonial y dos individuales"
+    },
+    {
+        "id":6,
+        "imagen": "https://www.tuoagency.com/uploads/sizes/blog/como-decorar-suite-hotel.jpg",
+        "nombre": "Habitación Suite",
+        "precio": 500,
+        "descripcion": "Habitacion para 2 personas, con baño incluido y gran comodidad para trabajar y descansar"
     }
 ]

@@ -1,23 +1,23 @@
 [
     {
         "id":1,
-        "imagen": "https://escuelaturismopirineos.com/wp-content/uploads/servicios-hotel.jpg",
+        "imagen": "https://www.infobae.com/new-resizer/JSigyxlGx_G2D-A1YVRvZiwuoec=/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/20152451/Mandarin-Oriental-Hong-Kong-3.jpg",
         "nombre": "30% de Descuento en Todo Marzo",
-        "descripcion": "Antes de que llegue Semana Santa necesitas llenarte de energía en las hermosas playas de Nueva Esparta y en un lugar que te brinde la mejor atención, por eso disfruta de este 30% de descuento solo para ti",
+        "descripcion": "Aprovecha este mes entero para alojarte con un descuento increible en nuestras habitaciones",
         "limite": "30-03-24"
     },
     {
         "id":2,
-        "imagen": "https://cdn.getyourguide.com/img/magazine/5f0d984852008deb4cebb8d7c9319801.jpg/original.jpg",
+        "imagen": "https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg",
         "nombre": "Promoción 2x1 de Semana Santa",
-        "descripcion": "Llegó la Semana Santa y no hay nada mejor que celebrarlo en HazbinHotel con las mejores recetas de pescados y mariscos, ven y disfruta de una estancia tranquila y llena de actividades que disfrutarás",
+        "descripcion": "Aprovecha nuestro 2x1 por semana santa, ven en familia a nuestro hotel disfruta de una buena estadia y excelente servicio",
         "limite": "24-02-24"
     },
     {
         "id":3,
-        "imagen": "https://www.embassy.es/wp-content/uploads/2023/06/menu-gourmet.jpg",
+        "imagen": "https://www.guiarepsol.com/content/dam/repsol-guia/contenidos-imagenes/comer/cultura-gastronomica/el-desayuno-de-hotel-mas-alla-del-bufe/gr-cms-media-featured_images-none-c58d3bd2-57c8-4094-941e-f29f1599a756-1.jpg",
         "nombre": "10% de Descuento en Servicios de Comida",
-        "descripcion": "Tenemos un especial Gourmet en nuestro Restaurante Estrella que te ofrecemos con un jugoso descuento del 10% para que disfrutes al máximo de nuestras delicias",
+        "descripcion": "Tenemos descuentos en nuestros mejores servicios de comida ahora mismo aprovechalos",
         "limite": "10-05-24"
     }
 ]
