@@ -11,11 +11,11 @@ export function Clima() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [currentHour, setCurrentHour] = useState(new Date().getHours());
-    const [temperaturaActual, setTemperaturaActual] = useState(0)
-    const [humedadActual, setHumedadActual] = useState(0)
-    const [tiempoActual, setTiempoActual] = useState(0)
-    const [codigoDeClimaActual, setCodigoDeClimaActual] = useState(0)
-    const [vientoActual, setVientoActual] = useState(0)
+    const [temperaturaActual, setTemperaturaActual] = useState([])
+    const [humedadActual, setHumedadActual] = useState([])
+    const [tiempoActual, setTiempoActual] = useState([])
+    const [codigoDeClimaActual, setCodigoDeClimaActual] = useState([])
+    const [vientoActual, setVientoActual] = useState([])
 
     async function infoClima(filtro, hora) {
         console.log(filtro, hora,'qqq');
@@ -45,11 +45,11 @@ export function Clima() {
 
     useEffect(()=>{
         async function climaActual() {
-            setTemperaturaActual(await infoClima('temperature_2m',currentHour))
-            setHumedadActual(await infoClima('relative_humidity_2m',currentHour))
-            setTiempoActual(await infoClima('time',currentHour))
-            setCodigoDeClimaActual(await infoClima('weather_code',currentHour))
-            setVientoActual(await infoClima('wind_speed_10m',currentHour))
+            setTemperaturaActual(await infoClima('temperature_2m'))
+            setHumedadActual(await infoClima('relative_humidity_2m'))
+            setTiempoActual(await infoClima('time'))
+            setCodigoDeClimaActual(await infoClima('weather_code'))
+            setVientoActual(await infoClima('wind_speed_10m'))
         }
         climaActual()
         
@@ -59,24 +59,37 @@ export function Clima() {
         <>
         <div className='fixed top-1/4 -right-1'>
             <button onClick={handleShow} className="border-solid border-2 border-green-100 bg-gradient-to-br from-white to-blue-200 rounded-l-3xl ">
-                <CodigoClima codigo={codigoDeClimaActual} time={tiempoActual} />
-                <p className='relative bottom-3 '>{temperaturaActual}°</p>
+                <CodigoClima codigo={codigoDeClimaActual[currentHour]} time={tiempoActual[currentHour]} />
+                <p className='relative bottom-3 '>{temperaturaActual[currentHour]}°C</p>
             </button>
         </div>
         <Offcanvas  show={show} onHide={handleClose} placement={'end'}>
             <Offcanvas.Header>
                 <button className='absolute top-5 right-7' onClick={(e)=>{e.preventDefault(),handleClose()}}><IoIosCloseCircleOutline className='text-4xl' /></button>
-            <Offcanvas.Title>Clima
-                <CodigoClima codigo={codigoDeClimaActual} time={tiempoActual}/>
-                <p>Temperatura: {temperaturaActual}°</p>
-                <p>Humedad: {humedadActual}%</p>
-                <p>Viento: {vientoActual}km/h</p>
-                <p>Ultima información extraída a las {currentHour}</p>
+            <Offcanvas.Title className='w-full p-3 bg-gradient-to-br from-white to-blue-200 '><p className='font-titulos'>Clima en el hotel</p>
+                <CodigoClima codigo={codigoDeClimaActual[currentHour]} time={tiempoActual[currentHour]}/>
+                <p className='font-textos'>Temperatura: {temperaturaActual[currentHour]}°C</p>
+                <p className='font-textos'>Humedad: {humedadActual[currentHour]}%</p>
+                <p className='font-textos'>Viento: {vientoActual[currentHour]}km/h</p>
+                <p className='font-textos'>Ultima información extraída a las {currentHour.toString().padStart(2, '0')}:00</p>
             </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            {temperaturaActual}
-            {tiempoActual}
+                <div className='flex flex-col items-center w-full'>
+                    
+                    <p className='text-xl mb-2 font-titulos'>Clima de hoy</p>
+                    {tiempoActual.map((hora, index)=>(
+                        <div className={`${currentHour == (new Date(hora)).getHours() ? 'bg-blue-200':'bg-blue-300'} relative p-2 flex w-full justify-around border-solid border-t-2 border-green-100 font-textos`}>
+                            <p className='absolute left-2'>{hora = ((new Date(hora)).getHours()).toString().padStart(2, '0')}:00</p>
+                            <CodigoClima codigo={codigoDeClimaActual[index]} time={tiempoActual[index]}/>
+                            <div>
+                                <p>Temperatura: {temperaturaActual[index]}°C</p>
+                                <p>Humedad: {humedadActual[index]}%</p>
+                                <p>Viento: {vientoActual[index]}km/h</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </Offcanvas.Body>
         </Offcanvas>
         </>

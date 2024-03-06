@@ -1,5 +1,20 @@
+import Spinner from 'react-bootstrap/Spinner';
+
 export function CodigoClima({codigo, time}) {
-    
+    console.log(codigo,typeof codigo);
+    console.log(time, typeof time);
+    if (typeof codigo ==='undefined' || typeof time === 'undefined') {
+        return (<>
+            <div className='w-10 m-6'>
+                <Spinner
+                    as="span"
+                    animation="grow"
+                    role="status"
+                    aria-hidden="true"
+                />
+            </div>
+        </>)
+    }
     var ClimaCode = {
         "0": {
             "day": {
@@ -282,8 +297,9 @@ export function CodigoClima({codigo, time}) {
             }
         }
     }
-
-    console.log(typeof codigo);
+    time = new Date(time)
+    time = time.getHours();
+    console.log('ada',time);
     var horario
     if (time <= 18 && time >= 7) {
         horario = 'day'
