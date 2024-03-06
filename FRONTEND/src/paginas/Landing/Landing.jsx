@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import { Mostrar } from '../../App'
 
 import { Parallax } from '../../componentes/Parallax/Parallax';
 import { Servicios } from '../../componentes/Landing/Servicios';
 import { Opiniones } from '../../componentes/Landing/Opiniones';
 
 
-export function Landing({setHeaderMostrar, setBotonRMostrar}) {
+
+export function Landing() {
     //NO MOSTRAR HEADER NI BOTON RESERVAR
+    const { setHeaderMostrar, setBotonRMostrar} = useContext(Mostrar);
     useEffect(() => {
         // Al entrar en la ruta
         setHeaderMostrar(false);

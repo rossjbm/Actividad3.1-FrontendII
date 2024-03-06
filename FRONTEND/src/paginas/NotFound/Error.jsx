@@ -1,7 +1,10 @@
-import { useEffect } from "react"
+import { useEffect, useContext } from "react"
 import { Link } from "react-router-dom";
+import { Mostrar } from '../../App'
 
-export function Error({setHeaderMostrar, setBotonRMostrar, setPieMostrar}) {
+
+export function Error() {
+    const { setHeaderMostrar, setBotonRMostrar, setPieMostrar } = useContext(Mostrar);
     useEffect(() => {
         setHeaderMostrar(false);
         setBotonRMostrar(false);

@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { Mostrar } from '../../App'
+
 import habitaciones from '../../data/Habitaciones.json'
 
-export function Reservar({setBotonRMostrar}) {
+export function Reservar() {
 
+    const {setBotonRMostrar} = useContext(Mostrar);
     useEffect(() => {
         setBotonRMostrar(false)
         return () => {
