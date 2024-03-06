@@ -14,6 +14,7 @@ import { Pago } from "./paginas/Pago/Pago";
 // REACT ROUTER
 import { Routes, Route} from "react-router-dom";
 import { useState } from "react";
+import { Reservar } from "./paginas/Reservar/Reservar";
 
 export function App() {
     const [headerMostrar, setHeaderMostrar] = useState(true)
@@ -31,7 +32,7 @@ export function App() {
                 <Route path="/blog" element={<h1>ESTAMOS EN BLOG</h1>} />
                 <Route path="/pagos" element={<Pago/>} />
                 <Route path="/contacto" element={<Contacto/>} />
-                <Route path="/reservar" element={<h1>ESTAMOS EN RESERVAR, recuerda no mostrar boton</h1>} />
+                <Route path="/reservar" element={<Reservar />} />
                 <Route path="*" element={<Error setHeaderMostrar={setHeaderMostrar} setBotonRMostrar={setBotonRMostrar} setPieMostrar={setPieMostrar}/>} />
             </Routes>
         </main>
