@@ -15,6 +15,7 @@ import { Pago } from "./paginas/Pago/Pago";
 // REACT ROUTER
 import { Routes, Route} from "react-router-dom";
 import { useState, useContext } from "react";
+import { Blog } from "./paginas/Blog/Blog";
 
 export const Mostrar = React.createContext();
 
@@ -32,7 +33,7 @@ export function App() {
                     <Route path="/inicio" element={<Inicio/>} />
                     <Route path="/ofertas" element={<Ofertas/>} />
                     <Route path="/habitaciones" element={<Habitaciones/>} />
-                    <Route path="/blog" element={<h1>ESTAMOS EN BLOG</h1>} />
+                    <Route path="/blog" element={<Blog/>} />
                     <Route path="/pagos" element={<Pago/>} />
                     <Route path="/contacto" element={<Contacto/>} />
                     <Route path="/reservar" element={<Reservar/>} />
