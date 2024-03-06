@@ -7,7 +7,7 @@ import { Opiniones } from '../../componentes/Landing/Opiniones';
 
 
 export function Landing({setHeaderMostrar, setBotonRMostrar}) {
-    //NO MOSTRAR HEADER
+    //NO MOSTRAR HEADER NI BOTON RESERVAR
     useEffect(() => {
         // Al entrar en la ruta
         setHeaderMostrar(false);

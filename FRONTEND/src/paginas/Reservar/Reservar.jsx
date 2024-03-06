@@ -1,7 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import habitaciones from '../../data/Habitaciones.json'
 
-export function Reservar() {
+export function Reservar({setBotonRMostrar}) {
+
+    useEffect(() => {
+        setBotonRMostrar(false)
+        return () => {
+            setBotonRMostrar(true);
+        };
+    }, []);
 
     const [alerta, setAlerta] = useState(false)
     const [alerta2, setAlerta2] = useState(false)

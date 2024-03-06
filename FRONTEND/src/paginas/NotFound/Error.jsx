@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 
 export function Error({setHeaderMostrar, setBotonRMostrar, setPieMostrar}) {
     useEffect(() => {
-        // Al entrar en la ruta
         setHeaderMostrar(false);
         setBotonRMostrar(false);
         setPieMostrar(false);
-    
-        // Al salir de la ruta
         return () => {
             setPieMostrar(true);
             setBotonRMostrar(true);

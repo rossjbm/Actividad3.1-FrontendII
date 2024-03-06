@@ -32,7 +32,7 @@ export function App() {
                 <Route path="/blog" element={<h1>ESTAMOS EN BLOG</h1>} />
                 <Route path="/pagos" element={<Pago/>} />
                 <Route path="/contacto" element={<Contacto/>} />
-                <Route path="/reservar" element={<Reservar />} />
+                <Route path="/reservar" element={<Reservar setBotonRMostrar={setBotonRMostrar}/>} />
                 <Route path="*" element={<Error setHeaderMostrar={setHeaderMostrar} setBotonRMostrar={setBotonRMostrar} setPieMostrar={setPieMostrar}/>} />
             </Routes>
         </main>
