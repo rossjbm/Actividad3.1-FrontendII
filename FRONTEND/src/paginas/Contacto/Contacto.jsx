@@ -28,7 +28,7 @@ export function Contacto(){
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >Correo Electrónico:</h4>
                 <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhotelvzla@gmail.com</p>
-                <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhotelesreservaciones@gmail.com</p>
+                <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhoteles reservaciones@gmail.com</p>
             </div>
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >WhatsApp y Telegram al:</h4>
