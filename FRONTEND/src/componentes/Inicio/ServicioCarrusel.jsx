@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Carousel from 'react-bootstrap/Carousel'
-import Servicio1 from '../../assets/Servicio1.jpeg'
-import Servicio2 from '../../assets/Servicio2.jpg'
-import Servicio3 from '../../assets/Servicio3.jpg'
-import Servicio4 from '../../assets/Servicio4.jpg'
-import Servicio5 from '../../assets/Servicio5.jpg'
-import Servicio6 from '../../assets/Servicio6.jpg'
-import Servicio7 from '../../assets/Servicio7.jpeg'
+import Servicio1 from '../../assets/Servicios/Servicio1.jpeg'
+import Servicio2 from '../../assets/Servicios/Servicio2.jpg'
+import Servicio3 from '../../assets/Servicios/Servicio3.jpg'
+import Servicio4 from '../../assets/Servicios/Servicio4.jpg'
+import Servicio5 from '../../assets/Servicios/Servicio5.jpg'
+import Servicio6 from '../../assets/Servicios/Servicio6.jpg'
+import Servicio7 from '../../assets/Servicios/Servicio7.jpeg'
 
 export function ServicioCarrusel() {
   return (<>

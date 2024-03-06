@@ -1,7 +1,7 @@
-import ImgUbicacion from '../../assets/ubicacion2.jpg';
-import ImgSotisficado from '../../assets/sotisficado2.jpeg';
-import ImgGastronomia from '../../assets/gastronomia2.jpg';
-import ImgActividades from '../../assets/actividades2.jpg';
+import ImgUbicacion from '../../assets/Landing/ubicacion2.jpg';
+import ImgSotisficado from '../../assets/Landing/sotisficado2.jpeg';
+import ImgGastronomia from '../../assets/Landing/gastronomia2.jpg';
+import ImgActividades from '../../assets/Landing/actividades2.jpg';
 
 export function Servicios() {
     return(<>

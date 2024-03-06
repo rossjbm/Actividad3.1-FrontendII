@@ -22,17 +22,17 @@ export function Contacto(){
             </div>
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >Llamadas al:</h4>
-                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58-0295-2345678</p>
-                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58-412-4657234</p>
+                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58 295-2345678</p>
+                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58 412-4657234</p>
             </div>
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >Correo Electrónico:</h4>
                 <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhotelvzla@gmail.com</p>
-                <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhotelesparta@gmail.com</p>
+                <p className="flex items-center gap-2 text-xl"><MdEmail className="text-3xl" />hazbinhotelesreservaciones@gmail.com</p>
             </div>
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >WhatsApp y Telegram al:</h4>
-                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58-0295-2345678</p>
+                <p className="flex items-center gap-2 text-xl"><MdPhoneInTalk className="text-3xl" />+58 412-4657234</p>
             </div>
             <div className="w-full flex flex-col gap-3 bg-gradient-to-t from-blue-200 to-green-100 p-4" >
                 <h4 className="text-2xl" >Redes Sociales:</h4>
