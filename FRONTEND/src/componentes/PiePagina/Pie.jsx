@@ -22,8 +22,8 @@ export function Pie() {
                     <div className="flex flex-col justify-start items-center gap-5">
                         <p className="text-lg">Principal</p>
                         <div className="">
-                            <p className="flex items-center gap-2 text-sm"><MdPhoneInTalk />+58-0295-2345678</p>
-                            <p className="flex items-center gap-2 text-sm"><MdPhoneInTalk />+58-412-4657234</p>
+                            <p className="flex items-center gap-2 text-sm"><MdPhoneInTalk />+58 295-2345678</p>
+                            <p className="flex items-center gap-2 text-sm"><MdPhoneInTalk />+58 412-4657234</p>
                             <p className="flex items-center gap-2 text-sm"><MdEmail />hazbinhotelvzla@gmail.com</p>
                         </div>
                     </div>

@@ -27,8 +27,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'parallaxFondo1': "url('/src/assets/ImgCompleta.png')",
-        'parallaxFondo2': "url('/src/assets/ImgRecorte.png')",
+        'parallaxFondo1': "url('/src/assets/Parallax/ImgCompleta.png')",
+        'parallaxFondo2': "url('/src/assets/Parallax/ImgRecorte.png')",
         'landingFondo1': "url('/src/assets/fondoHotel1.jpg')",
         'bgFondo1': "url('/src/assets/fondoHotel2.jpg')",
         'bgFondo2': "url('/src/assets/fondoHotel3.jpg')",

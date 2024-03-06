@@ -43,11 +43,7 @@ export function Inicio() {
                 </div>
             </div>
 
-            <div className="static h-36 bg-bgFondo2 bg-cover bg-fixed w-full ">
-                <div className="flex justify-center items-center w-full h-36 bg-gray-400 p-5">
-                    <h2 className="text-white text-3xl font-textos text-center">Te Puede Interesar</h2>
-                </div>
-            </div>
+            
         </article>
     </>)
 }
