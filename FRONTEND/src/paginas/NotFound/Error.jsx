@@ -4,15 +4,18 @@ import { Mostrar } from '../../App'
 
 
 export function Error() {
-    const { setHeaderMostrar, setBotonRMostrar, setPieMostrar } = useContext(Mostrar);
+    const { setHeaderMostrar, setBotonRMostrar, setPieMostrar, setClimaMostrar } = useContext(Mostrar);
     useEffect(() => {
         setHeaderMostrar(false);
         setBotonRMostrar(false);
+        setClimaMostrar(false)
         setPieMostrar(false);
         return () => {
             setPieMostrar(true);
             setBotonRMostrar(true);
-            setHeaderMostrar(true);
+            setHeaderMostrar(true);            
+            setClimaMostrar(true)
+
         };
     }, []);
 

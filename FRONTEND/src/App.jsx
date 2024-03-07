@@ -11,6 +11,7 @@ import { Pie } from "./componentes/PiePagina/Pie";
 import { Habitaciones } from "./paginas/Habitaciones/Habitaciones";
 import { Contacto } from "./paginas/Contacto/Contacto";
 import { Pago } from "./paginas/Pago/Pago";
+import { Clima } from "./componentes/clima/Clima";
 
 // REACT ROUTER
 import { Routes, Route} from "react-router-dom";
@@ -23,11 +24,13 @@ export function App() {
     const [headerMostrar, setHeaderMostrar] = useState(true)
     const [botonRMostrar, setBotonRMostrar] = useState(true)
     const [pieMostrar, setPieMostrar] = useState(true)
+    const [climaMostrar, setClimaMostrar] = useState(true)
 
     return (<>
         {headerMostrar ? <Encabezado/> : null}
+        {climaMostrar ? <Clima/> : null}
         <main className="min-h-[400px] md:min-h-[500px] lg:min-h-[350px]">
-            <Mostrar.Provider value={{ headerMostrar, setHeaderMostrar, botonRMostrar, setBotonRMostrar, pieMostrar, setPieMostrar }}>
+            <Mostrar.Provider value={{ setHeaderMostrar, setBotonRMostrar, setPieMostrar, setClimaMostrar }}>
                 <Routes>
                     <Route path="/" element={<Landing/>} />
                     <Route path="/inicio" element={<Inicio/>} />

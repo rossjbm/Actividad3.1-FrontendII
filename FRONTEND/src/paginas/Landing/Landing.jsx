@@ -10,15 +10,17 @@ import { Opiniones } from '../../componentes/Landing/Opiniones';
 
 export function Landing() {
     //NO MOSTRAR HEADER NI BOTON RESERVAR
-    const { setHeaderMostrar, setBotonRMostrar} = useContext(Mostrar);
+    const { setHeaderMostrar, setBotonRMostrar, setClimaMostrar} = useContext(Mostrar);
     useEffect(() => {
         // Al entrar en la ruta
         setHeaderMostrar(false);
         setBotonRMostrar(false)
+        setClimaMostrar(false)
     
         // Al salir de la ruta
         return () => {
             setHeaderMostrar(true);
+            setClimaMostrar(true)
             setBotonRMostrar(true);
         };
     }, []);
