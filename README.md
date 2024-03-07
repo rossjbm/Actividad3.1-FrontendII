@@ -17,7 +17,7 @@ Asignatura Frontend II
 
 
 <h2>Descripción</h2>
-<b>Link del video explicativo:  </b>
+<b>Link del video explicativo: https://youtu.be/ABqhpQXqPuo </b><br>
 <b>Link del Diseño en Figma: https://www.figma.com/file/zuMm0tXrzWytOmt3uj6cAB/e-Actividad-3.1?type=design&node-id=0-1&mode=design&t=d7yQBSU50gy8dDXm-0</b>
 
 Esta aplicación consiste en un SPA de un hotel ficticio llamado HazbinHotel ubicado en Venezuela, estado Nueva Esparta, específicamente en la Isla de Margarita, donde los usuarios podrán ver la información disponible del hotel como ofertas, sus habitaciones, su contacto, y a su vez podrá realizar reservas a través de un formulario.
